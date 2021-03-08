@@ -1,7 +1,7 @@
 import { NowRequest, NowResponse } from '@vercel/node'
 import axios from 'axios'
 
-export default function (req: NowRequest, res: NowResponse) {
+export default async function (req: NowRequest, res: NowResponse) {
   // Cache results for 24h
   res.setHeader('Cache-Control', 's-maxage=86400')
 
