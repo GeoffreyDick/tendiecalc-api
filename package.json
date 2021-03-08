@@ -1,0 +1,10 @@
+{
+  "name": "tendiecalc-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "GeoffreyDick",
+  "license": "MIT",
+  "devDependencies": {
+    "@vercel/node": "^1.9.0"
+  }
+}
