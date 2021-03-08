@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "GeoffreyDick",
   "license": "MIT",
+  "scripts": {
+    "vercel-build": "node ./build.js"
+  },
   "devDependencies": {
     "@vercel/node": "^1.9.0"
   },
