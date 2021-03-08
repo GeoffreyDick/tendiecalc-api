@@ -7,7 +7,7 @@ export default async function (req: NowRequest, res: NowResponse) {
 
   try {
     const response = await axios.get('https://api.exchangeratesapi.io/latest?base=USD')
-    res.status(200).send(response)
+    res.send(response)
   } catch (error) {
     res.send(error)
   }
