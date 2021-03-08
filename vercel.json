@@ -1,6 +1,10 @@
 {
   "headers": [
     {
+      "source": "/api/exchange-rates",
+      "headers": [{ "key": "Cache-Control", "value": "s-maxage=21600" }]
+    },
+    {
       "source": "/api/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
