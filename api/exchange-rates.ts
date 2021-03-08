@@ -5,11 +5,10 @@ export default async function (req: NowRequest, res: NowResponse) {
   // Cache results for 24h
   res.setHeader('Cache-Control', 's-maxage=0')
 
-  axios.get('https://api.exchangeratesapi.io/latest?base=USD')
-  .then(function (response) {
+  try {
+    const response = await axios.get('https://api.exchangeratesapi.io/latest?base=USD')
     res.status(200).send(response)
-  })
-  .catch(function (error) {
-    res.send(error);
-  })
+  } catch (error) {
+    res.send(error)
+  }
 }
