@@ -1,5 +1,5 @@
 import { NowRequest, NowResponse } from '@vercel/node'
-import axios from 'axios'
+const axios = require('axios');
 
 export default async function (req: NowRequest, res: NowResponse) {
   // Cache results for 24h
