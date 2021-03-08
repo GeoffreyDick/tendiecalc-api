@@ -6,7 +6,7 @@ const allowCors = fn => async (req: NowRequest, res: NowResponse) => {
   res.setHeader('Cache-Control', 's-maxage=21600')
 
   // Allow CORS
-  res.setHeader('Access-Control-Allow-Origin', '*')
+  res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS')
   res.setHeader(
     'Access-Control-Allow-Headers',
