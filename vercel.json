@@ -5,6 +5,10 @@
       "headers": [{ "key": "Cache-Control", "value": "s-maxage=21600" }]
     },
     {
+      "source": "/api/marketstack",
+      "headers": [{ "key": "Cache-Control", "value": "s-maxage=900" }]
+    },
+    {
       "source": "/api/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Credentials", "value": "true" },
