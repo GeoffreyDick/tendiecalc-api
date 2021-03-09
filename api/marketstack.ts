@@ -10,7 +10,7 @@ const params = {
 
 export default async function (req: NowRequest, res: NowResponse) {
   try {
-    const response = await axios.get(`https://api.marketstack.com/v1/tickers/${ticker}/intraday/latest`, { params }).then(({data}) => data)
+    const response = await axios.get(`https://api.marketstack.com/v1/tickers/GME/intraday/latest`, { params }).then(({data}) => data)
     res.send(response)
   } catch (error) {
     res.send(error)
