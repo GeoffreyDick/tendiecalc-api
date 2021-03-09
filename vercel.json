@@ -2,11 +2,27 @@
   "headers": [
     {
       "source": "/api/exchange-rates",
-      "headers": [{ "key": "Cache-Control", "value": "s-maxage=21600" }]
+      "headers": [
+        { "key": "Cache-Control", "value": "max-age=0, s-maxage=21600" }
+      ]
     },
     {
-      "source": "/api/marketstack",
-      "headers": [{ "key": "Cache-Control", "value": "s-maxage=900" }]
+      "source": "/api/marketstack-ticker",
+      "headers": [
+        { "key": "Cache-Control", "value": "max-age=0, s-maxage=86400" }
+      ]
+    },
+    {
+      "source": "/api/marketstack-exchange",
+      "headers": [
+        { "key": "Cache-Control", "value": "max-age=0, s-maxage=604800" }
+      ]
+    },
+    {
+      "source": "/api/marketstack-intraday",
+      "headers": [
+        { "key": "Cache-Control", "value": "max-age=0, s-maxage=900" }
+      ]
     },
     {
       "source": "/api/(.*)",
