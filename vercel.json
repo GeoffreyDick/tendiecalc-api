@@ -13,12 +13,6 @@
       ]
     },
     {
-      "source": "/api/marketstack-exchange",
-      "headers": [
-        { "key": "Cache-Control", "value": "max-age=0, s-maxage=604800" }
-      ]
-    },
-    {
       "source": "/api/marketstack-intraday",
       "headers": [
         { "key": "Cache-Control", "value": "max-age=0, s-maxage=900" }
