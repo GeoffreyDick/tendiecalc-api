@@ -21,7 +21,7 @@
     {
       "source": "/api/marketstack-intraday",
       "headers": [
-        { "key": "Cache-Control", "value": "max-age=0, s-maxage=900" }
+        { "key": "Cache-Control", "value": "max-age=0, s-maxage=300" }
       ]
     },
     {
