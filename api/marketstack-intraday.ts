@@ -7,7 +7,8 @@ export default async function (req: NowRequest, res: NowResponse) {
 
   // Add Marketstack API Key to params
   const params = {
-    access_key: process.env.MARKETSTACK_API_KEY
+    access_key: process.env.MARKETSTACK_API_KEY,
+    interval: '15min'
   }
 
   try {
