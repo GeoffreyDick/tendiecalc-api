@@ -11,7 +11,7 @@ export default async function (req: NowRequest, res: NowResponse) {
   }
 
   try {
-    const response = await axios.get(`https://api.marketstack.com/v1/exchange/${exchange}`, { params }).then(({data}) => data)
+    const response = await axios.get(`https://api.marketstack.com/v1/exchanges/${exchange}`, { params }).then(({data}) => data)
     res.send(response)
   } catch (error) {
     res.send('error')
